@@ -5,14 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/mocha.js",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/mocha.js"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/mocha.js",
+    "jest": "jest test/demo.test.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "istanbul": "^0.4.5",
+    "jest": "^24.7.1",
     "mocha": "^6.1.1",
     "nyc": "^13.3.0"
+  },
+  "dependencies": {
+    "babel-jest": "^24.7.1",
+    "babel-preset-react": "^6.24.1",
+    "benchmark": "^2.1.4",
+    "enzyme": "^3.9.0",
+    "react": "^16.8.6"
   }
 }
